@@ -154,7 +154,6 @@ int main( int argc, char** argv )
     }
     else if(((purpleCount>redCount)&&(purpleCount>blueCount)&&(purpleCount>orangeCount)&&(purpleCount>yellowCount)&&(purpleCount>blackCount)&&(purpleCount>greenCount)&&(purpleCount>whiteCount))||(purpleCount>0)){
         cout<<"MAIN OBJECT IS PURPLE"<<endl;
-        cout<<"SHAPE DETECTED: TRIANGLE"<<endl;
         cout<<purpleCount<<endl;
         hconcat(frame, frameHSV, frameHSV_purple);
         //imshow("Purple Count", frameHSV_purple);
