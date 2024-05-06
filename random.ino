@@ -107,7 +107,6 @@ int main( int argc, char** argv )
 
     if ((redCount>blueCount)&&(redCount>greenCount)&&(redCount>yellowCount)&&(redCount>orangeCount)&&(redCount>blackCount)&&(redCount>whiteCount)&&(redCount>purpleCount)){
        cout<<"MAIN OBJECT IS RED"<<endl;
-       cout<<"CIRCLE DETECTED! FOLLOWING RED LINE!"<<endl;
        cout<<redCount<<endl;
        hconcat(frame, frameHSV, frameHSV_red);
        //imshow("Red Output", frameHSV_red);
