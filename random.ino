@@ -216,7 +216,7 @@ int main( int argc, char** argv )
         //}
 
         imshow("Contours", contourOutput_blue);
-        /*Mat Transformedframe = contourFrame_blue;
+        Mat Transformedframe = contourFrame_blue;
         Rect vertices = boundingRect(contours_blue);
         transformPerspective(contours_blue, Transformedframe, 320, 240);
 
@@ -224,7 +224,7 @@ int main( int argc, char** argv )
         matchTemplate(Transformedframe, Circle, Comparison, TM_CCORR_NORMED, CV_8UC3); // Do the matching and normalise
         normalize(Comparison, Comparison, 0, 1, NORM_MINMAX, -1, CV_8UC3);
 
-        imshow("Transformed Contours", Transformedframe);*/
+        imshow("Transformed Contours", Transformedframe);
 
         //moveWindow("Contours", 400, 100);
 
