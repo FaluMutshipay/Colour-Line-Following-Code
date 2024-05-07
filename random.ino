@@ -111,7 +111,7 @@ int main( int argc, char** argv )
        hconcat(frame, frameHSV, frameHSV_red);
        //imshow("Red Output", frameHSV_red);
     }
-    /* else if (((orangeCount>redCount1)&&(orangeCount>greenCount)&&(orangeCount>yellowCount)&&(orangeCount>blueCount)&&(orangeCount>blackCount)&&(orangeCount>whiteCount))||((orangeCount>redCount2)&&(orangeCount>greenCount)&&(orangeCount>yellowCount)&&(orangeCount>blueCount)&(orangeCount>blackCount)&&(orangeCount>whiteCount))){
+     else if (((orangeCount>redCount1)&&(orangeCount>greenCount)&&(orangeCount>yellowCount)&&(orangeCount>blueCount)&&(orangeCount>blackCount)&&(orangeCount>whiteCount))||((orangeCount>redCount2)&&(orangeCount>greenCount)&&(orangeCount>yellowCount)&&(orangeCount>blueCount)&(orangeCount>blackCount)&&(orangeCount>whiteCount))){
 
             cout<<"MAIN OBJECT IS ORANGE"<<endl;
             cout<<orangeCount<<endl;
@@ -124,27 +124,27 @@ int main( int argc, char** argv )
             cout<<yellowCount<<endl;
             hconcat(frame, frameHSV, frameHSV_yellow);
             //imshow("Yellow Output", frameHSV_yellow);
-    }*/
-    /*else if ((blueCount>redCount)&&(blueCount>greenCount)&&(blueCount>orangeCount)&&(blueCount>yellowCount)&&(blueCount>blackCount)&&(blueCount>whiteCount)&&(blueCount>purpleCount)){
+    }
+    else if ((blueCount>redCount)&&(blueCount>greenCount)&&(blueCount>orangeCount)&&(blueCount>yellowCount)&&(blueCount>blackCount)&&(blueCount>whiteCount)&&(blueCount>purpleCount)){
 
             cout<<"MAIN OBJECT IS BLUE"<<endl;
             cout<<blueCount<<endl;
             hconcat(frame, frameHSV, frameHSV_blue);
             //imshow("Blue Output", frameHSV_blue);
-    }*/
+    }
     else if ((greenCount>redCount)&&(greenCount>blueCount)&&(greenCount>orangeCount)&&(greenCount>yellowCount)&&(greenCount>blackCount)&&(greenCount>whiteCount)&&(greenCount>purpleCount)){
         cout<<"MAIN OBJECT IS GREEN"<<endl;
         cout<<greenCount<<endl;
         hconcat(frame, frameHSV, frameHSV_green);
         //imshow("Green Output", frameHSV_green);
     }
-    /*else if ((blackCount>redCount)&&(blackCount>blueCount)&&(blackCount>orangeCount)&&(blackCount>yellowCount)&&(blackCount>greenCount)&&(blackCount>whiteCount)&&(blackCount>purpleCount)){
+    else if ((blackCount>redCount)&&(blackCount>blueCount)&&(blackCount>orangeCount)&&(blackCount>yellowCount)&&(blackCount>greenCount)&&(blackCount>whiteCount)&&(blackCount>purpleCount)){
 
         cout<<"MAIN OBJECT IS BLACK"<<endl;
         cout<<blackCount<<endl;
         hconcat(frame, frameHSV, frameHSV_black);
         //imshow("Black Output", frameHSV_black);
-    }*/
+    }
     else if ((whiteCount>redCount)&&(whiteCount>blueCount)&&(whiteCount>orangeCount)&&(whiteCount>yellowCount)&&(whiteCount>blackCount)&&(whiteCount>greenCount)&&(whiteCount>purpleCount)){
 
         cout<<"MAIN OBJECT IS WHITE"<<endl;
