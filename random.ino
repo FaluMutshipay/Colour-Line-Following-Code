@@ -260,17 +260,6 @@ int main( int argc, char** argv )
             error = regionCentre.x - centrePixel;}
 
         float errorCount = errorCount + error;
-        float Kp = 1;
-        float Ki = 0;
-        float Kd = 0.2;
-        int16_t leftMotor_speed = 0;
-        int16_t rightMotor_speed = 0;
-        int leftSpeed_setting=150;
-        int rightSpeed_setting=150;
-        int centreAngle=93;
-        int servoAngle =0;
-        float k = 0.8;
-
         float u = (Kp*error)+(Ki*errorCount)+(Kd*(error-previousError));
         previousError = error;
         error = 0;
