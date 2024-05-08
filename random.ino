@@ -226,7 +226,7 @@ int main( int argc, char** argv )
 
         //moveWindow("Contours", 400, 100);
 
-        /*for (int x = max_sensorColumn; x>= 0; x--){
+        for (int x = max_sensorColumn; x>= 0; x--){
         int pixelValue = frame.at<char>(x,0);
         int pixelWeighting = pixelValue * (x-160);
         }
@@ -249,7 +249,7 @@ int main( int argc, char** argv )
         float k=0.5;
         servoAngle=centreAngle+u; // value updates
         leftMotor_speed=leftSpeed_setting+k*u;
-        rightMotor_speed=rightSpeed_setting-k*u;*/
+        rightMotor_speed=rightSpeed_setting-k*u;
 
 
         float error = 0;
